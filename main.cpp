@@ -207,7 +207,12 @@ int main(){
 				comprobarPisarSinCondon==true;
       		}
 			if (Eligio1.getGenero()=="Masculino"&&Eligio2.getGenero()=="Femenino"){
-				comprobarPisarSinCondon==true;
+				
+      		}
+      		if (comprobarSexo==true &&comprobarSexo==true
+      			&&comprobarMenstrucion==true&&comprobarFertibi==true&&comprobarPisarSinCondon==true){
+      			//paso al menu
+
       		}
 		}
 		if (opcionMendel==2){
