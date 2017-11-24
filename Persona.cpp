@@ -15,8 +15,14 @@ Persona::Persona(string Nombre,string Genero,string ColorPelo,string ColorPiel,s
 
 Persona Persona::operator+(Persona& per) {
    Persona Envio;
+<<<<<<< HEAD
    
          
+=======
+	 string resp1, resp2, resp3, resp4;
+	 //resp1=this.persona
+
+>>>>>>> 5b261a6ee6c3dc8aec230b7bedc9a9f50bca1bab
    return Envio;
 }
 
