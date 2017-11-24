@@ -12,9 +12,11 @@ Persona::Persona(string Nombre,string Genero,string ColorPelo,string ColorPiel,s
       this->GenePiel=GenePiel;
 }
 
-Persona* Persona::operator+(const Persona &per) {
+
+Persona Persona::operator+(Persona& per) {
+   Persona Envio;
    
-   return *this;
+   return Envio;
 }
 
 Persona::Persona(){

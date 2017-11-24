@@ -49,6 +49,9 @@ class Persona{
 
 		string getGenePiel();
 		void setGenePiel(string);
+		//metodos sobrecargados
+		Persona operator+(Persona& p);
+		Persona operator*(Persona& p);
 
 };
 #endif
