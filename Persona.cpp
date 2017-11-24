@@ -1,48 +1,94 @@
 #include "Persona.h"
 
-Persona::Persona(string Nombre,string Sexo,string ColorPelo,string ColorOjos,string ColorPiel,string Fertilidad){
-	this->Nombre=Nombre;
-	this->Sexo=Sexo;
-	this->ColorPelo=ColorPelo;
-	this->ColorOjos=ColorOjos;
-	this->ColorPiel=ColorPiel;
-	this->Fertilidad=Fertilidad;
+Persona::Persona(string Nombre,string Genero,string ColorPelo,string ColorPiel,string ColorOjos,string Fertil,string GenePelo,string GeneOjos,string GenePiel){
+      this->Nombre=Nombre;
+      this->Genero=Genero;
+      this->ColorPelo=ColorPelo;
+      this->ColorPiel=ColorPiel;
+      this->ColorOjos=ColorOjos;
+      this->Fertil=Fertil;
+      this->GenePelo=GenePelo;
+      this->GeneOjos=GeneOjos;
+      this->GenePiel=GenePiel;
 }
+
+Persona* Persona::operator+(const Persona &per) {
+   
+   return *this;
+}
+
 Persona::Persona(){
 
-}void Persona::setNombre(string Nombre){
+}
+
+void Persona::setNombre(string Nombre){
    this-> Nombre=Nombre;
 }
+
 string Persona::getNombre(){
    return Nombre;
 }
-void Persona::setSexo(string Sexo){
-   this-> Sexo=Sexo;
+
+void Persona::setGenero(string Genero){
+   this-> Genero=Genero;
 }
-string Persona::getSexo(){
-   return Sexo;
+
+string Persona::getGenero(){
+   return Genero;
 }
+
 void Persona::setColorPelo(string ColorPelo){
    this-> ColorPelo=ColorPelo;
 }
+
 string Persona::getColorPelo(){
    return ColorPelo;
 }
-void Persona::setColorOjos(string ColorOjos){
-   this-> ColorOjos=ColorOjos;
-}
-string Persona::getColorOjos(){
-   return ColorOjos;
-}
+
 void Persona::setColorPiel(string ColorPiel){
    this-> ColorPiel=ColorPiel;
 }
+
 string Persona::getColorPiel(){
    return ColorPiel;
 }
-void Persona::setFertilidad(string Fertilidad){
-   this-> Fertilidad=Fertilidad;
+
+void Persona::setColorOjos(string ColorOjos){
+   this-> ColorOjos=ColorOjos;
 }
-string Persona::getFertilidad(){
-   return Fertilidad;
+
+string Persona::getColorOjos(){
+   return ColorOjos;
+}
+
+void Persona::setFertil(string Fertil){
+   this-> Fertil=Fertil;
+}
+
+string Persona::getFertil(){
+   return Fertil;
+}
+
+void Persona::setGenePelo(string GenePelo){
+   this-> GenePelo=GenePelo;
+}
+
+string Persona::getGenePelo(){
+   return GenePelo;
+}
+
+void Persona::setGeneOjos(string GeneOjos){
+   this-> GeneOjos=GeneOjos;
+}
+
+string Persona::getGeneOjos(){
+   return GeneOjos;
+}
+
+void Persona::setGenePiel(string GenePiel){
+   this-> GenePiel=GenePiel;
+}
+
+string Persona::getGenePiel(){
+   return GenePiel;
 }

@@ -6,34 +6,49 @@ using namespace std;
 
 #ifndef PERSONA_H
 #define PERSONA_H
+
 class Persona{
+
 	protected:
 		string Nombre;
-		string Sexo;
+		string Genero;
 		string ColorPelo;
-		string ColorOjos;
 		string ColorPiel;
-		string Fertilidad;
+		string ColorOjos;
+		string Fertil;
+		string GenePelo;
+		string GeneOjos;
+		string GenePiel;
+
 	public:
-		Persona(string,string,string,string,string,string);
+		Persona(string,string,string,string,string,string,string,string,string);
 		Persona();
 		string getNombre();
 		void setNombre(string);
 
-		string getSexo();
-		void setSexo(string);
+		string getGenero();
+		void setGenero(string);
 
 		string getColorPelo();
 		void setColorPelo(string);
 
-		string getColorOjos();
-		void setColorOjos(string);
-
 		string getColorPiel();
 		void setColorPiel(string);
 
-		string getFertilidad();
-		void setFertilidad(string);
+		string getColorOjos();
+		void setColorOjos(string);
+
+		string getFertil();
+		void setFertil(string);
+
+		string getGenePelo();
+		void setGenePelo(string);
+
+		string getGeneOjos();
+		void setGeneOjos(string);
+
+		string getGenePiel();
+		void setGenePiel(string);
 
 };
 #endif
