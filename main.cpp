@@ -180,6 +180,7 @@ int main(){
       }
       case 4:{
       	int opcionMendel;
+        int persona1, persona2;
       	cout<<"1) Desea tener relaciones sin condon"
 			<<"2) Desea tener relaciones con condon"
 			<<"Ingrese su opcion"<<endl;
@@ -187,16 +188,16 @@ int main(){
 		if (opcionMendel==1){//sin condon
 		     bool Esfertil=false;
       		int persona1,personas2;
-      		cout<<"Ingrese la posicion de la primera persona que va sumar: "
+      		cout<<"Ingrese la posicion de la primera persona que va sumar: "<<endl;
       		cin>>persona1;
-      		cout<<"Ingrese la posicion de la segunda persona que va sumar: "
+      		cout<<"Ingrese la posicion de la segunda persona que va sumar: "<<endl;
       		cin>>persona2;
       		Persona* Eligio1 = personas.at(persona1);
       		Persona* Eligio2 = personas.at(persona2);
       		bool comprobarSexo=false;
       		bool comprobarFertibi=false,comprobarMenstrucion=false,comprobarPisarSinCondon=false;
-			int randomRegla=1+rand()%(31-1);
-			int randomSinCondon=1+rand()%(101-1);
+			    int randomRegla=1+rand()%(31-1);
+			    int randomSinCondon=1+rand()%(101-1);
 			if (Eligio1->getFertil()=="fertil"&&Eligio2->getFertil()=="fertil"){
 				comprobarFertibi==true;
       		}
@@ -218,9 +219,9 @@ int main(){
 		if (opcionMendel==2){//con condon
 			bool Esfertil=false;
       		int persona1,personas2;
-      		cout<<"Ingrese la posicion de la primera persona que va sumar: "
+      		cout<<"Ingrese la posicion de la primera persona que va sumar: "<<endl;
       		cin>>persona1;
-      		cout<<"Ingrese la posicion de la segunda persona que va sumar: "
+      		cout<<"Ingrese la posicion de la segunda persona que va sumar: "<<endl;
       		cin>>persona2;
       		Persona* Eligio1 = personas.at(persona1);
       		Persona* Eligio2 = personas.at(persona2);
