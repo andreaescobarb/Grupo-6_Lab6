@@ -15,6 +15,8 @@ Persona::Persona(string Nombre,string Genero,string ColorPelo,string ColorPiel,s
 
 Persona Persona::operator+(Persona& per) {
    Persona Envio;
+
+
          
    return Envio;
 }
@@ -44,17 +46,23 @@ void Persona::setColorPelo(string ColorPelo){
    this-> ColorPelo=ColorPelo;
 }
 
+
 string Persona::getColorPelo(){
    return ColorPelo;
 }
+
 
 void Persona::setColorPiel(string ColorPiel){
    this-> ColorPiel=ColorPiel;
 }
 
+
 string Persona::getColorPiel(){
    return ColorPiel;
 }
+
+
+
 
 void Persona::setColorOjos(string ColorOjos){
    this-> ColorOjos=ColorOjos;
