@@ -196,18 +196,18 @@ int main(){
       		bool comprobarSexo=false;
       		bool comprobarFertibi=false,comprobarMenstrucion=false,comprobarPisarSinCondon=false;
 			int randomRegla=1+rand()%(31-1);
-			int randomSinCondon=1+rand()%(101-1);		
-			if (Eligio1.getFertil()=="fertil"&&Eligio2.getFertil()=="fertil"){
+			int randomSinCondon=1+rand()%(101-1);
+			if (Eligio1->getFertil()=="fertil"&&Eligio2->getFertil()=="fertil"){
 				comprobarFertibi==true;
-      		}      		
+      		}
 			if (randomRegla<29){
 				comprobarMenstrucion==true;
       		}
 			if (randomSinCondon<21){
 				comprobarPisarSinCondon==true;
       		}
-			if (Eligio1.getGenero()=="Masculino"&&Eligio2.getGenero()=="Femenino"||
-				Eligio1.getGenero()=="Femenino"&&Eligio2.getGenero()=="Masculino"){
+			if (Eligio1->getGenero()=="Masculino"&&Eligio2->getGenero()=="Femenino"||
+				Eligio1->getGenero()=="Femenino"&&Eligio2->getGenero()=="Masculino"){
 				comprobarSexo=true;
       		}
       		if (comprobarSexo==true
@@ -227,25 +227,25 @@ int main(){
       		bool comprobarSexo=false;
       		bool comprobarFertibi=false,comprobarMenstrucion=false,comprobarPisarSinCondon=false;
 			int randomRegla=1+rand()%(31-1);
-			int randomConCondon=1+rand()%(101-1);		
-			if (Eligio1.getFertil()=="fertil"&&Eligio2.getFertil()=="fertil"){
+			int randomConCondon=1+rand()%(101-1);
+			if (Eligio1->getFertil()=="fertil"&&Eligio2->getFertil()=="fertil"){
 				comprobarFertibi==true;
-      		}      		
+      		}
 			if (randomRegla<29){
 				comprobarMenstrucion==true;
       		}
 			if (randomConCondon<4){//las probabilidades de tener relaciones con condon y quedar la persona quede embarazada es de 4%
 				comprobarPisarSinCondon==true;
       		}
-			if (Eligio1.getGenero()=="Masculino"&&Eligio2.getGenero()=="Femenino"||
-				Eligio1.getGenero()=="Femenino"&&Eligio2.getGenero()=="Masculino"){
+			if (Eligio1->getGenero()=="Masculino"&&Eligio2->getGenero()=="Femenino"||
+				Eligio1->getGenero()=="Femenino"&&Eligio2->getGenero()=="Masculino"){
 				comprobarSexo=true;
       		}
       		if (comprobarSexo==true
       			&&comprobarMenstrucion==true&&comprobarFertibi==true&&comprobarPisarSinCondon==true){
       			//paso al menu
       		}
-		}      	
+		}
 
         break;
       }
