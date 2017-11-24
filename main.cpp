@@ -117,12 +117,12 @@ int main(){
               break;
             }
             case 2:{
-              pelo="Trigueno";
+              piel="Trigueno";
               genPiel="aa";
               break;
             }
             case 3:{
-              pelo ="Blanco";
+              piel ="Blanco";
               genPiel="AA";
               break;
             }
@@ -148,7 +148,7 @@ int main(){
             }
           }
 
-          personas.push_back(new Persona(nombre, genero, pelo, ojos, piel, fertil));
+          personas.push_back(new Persona(nombre, genero, pelo, ojos, piel, fertil, genPelo, genOjos, genPiel));
 
           std::cout << "Desea agregar mas personas [S/N]" << '\n';
           cin>>resp;
@@ -157,9 +157,20 @@ int main(){
         break;
       }
       case 2:{
+        cout<<endl;
         for (int i = 0; i < personas.size(); i++) {
           cout<<i<<"- "<<personas.at(i)->getNombre()<<endl;
         }
+        cout<<endl;
+        cout<<"Ingrese posicion de la persona que desea eliminar"<<endl;
+        int pos;
+        cin>>pos;
+        while(pos>personas.size()||pos<0){
+          cout<<"Persona inexistente, ingrese de nuevo"<<endl;
+          cin>>pos;
+        }
+        delete personas.at(pos);
+        personas.erase(personas.begin()+pos);
 
         break;
       }
