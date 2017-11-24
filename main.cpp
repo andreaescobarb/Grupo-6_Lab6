@@ -2,6 +2,8 @@
 #include <string>
 #include "Persona.h"
 #include <vector>
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
 int menu();
