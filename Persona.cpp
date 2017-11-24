@@ -15,7 +15,10 @@ Persona::Persona(string Nombre,string Genero,string ColorPelo,string ColorPiel,s
 
 Persona Persona::operator+(Persona& per) {
    Persona Envio;
-         
+	 string resp1, resp2, resp3, resp4;
+	 resp1=this.persona
+
+
    return Envio;
 }
 
