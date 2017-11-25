@@ -2,6 +2,7 @@
 #include <string>
 #include "Persona.h"
 #include <vector>
+#include "stdlib.h"
 
 using namespace std;
 int menu();
@@ -30,7 +31,6 @@ int main(){
           int eyes;
           int skin;
           int fertile;
-
           cout<<"Ingrese el nombre de persona"<<endl;
           cin>>nombre;
           cout<<"Ingrese el genero de persona"<<endl;
@@ -175,7 +175,11 @@ int main(){
         break;
       }
       case 3:{
-
+        cout<<endl;
+        for (int i = 0; i < personas.size(); i++) {
+          cout<<i<<"- "<<personas.at(i)->getNombre()<<endl;
+        }
+        cout<<endl;
         break;
       }
       case 4:{
@@ -186,13 +190,13 @@ int main(){
 		cin>>opcionMendel;
 		if (opcionMendel==1){//sin condon
 		     bool Esfertil=false;
-      		int persona1,personas2;
-      		cout<<"Ingrese la posicion de la primera persona que va sumar: "
-      		cin>>persona1;
-      		cout<<"Ingrese la posicion de la segunda persona que va sumar: "
-      		cin>>persona2;
-      		Persona* Eligio1 = personas.at(persona1);
-      		Persona* Eligio2 = personas.at(persona2);
+      		int persona11,persona22;
+      		cout<<"Ingrese la posicion de la primera persona que va sumar: "<<endl;
+      		cin>>persona11;
+      		cout<<"Ingrese la posicion de la segunda persona que va sumar: "<<endl;
+      		cin>>persona22;
+      		Persona* Eligio1 = personas.at(persona11);
+      		Persona* Eligio2 = personas.at(persona22);
       		bool comprobarSexo=false;
       		bool comprobarFertibi=false,comprobarMenstrucion=false,comprobarPisarSinCondon=false;
 			int randomRegla=1+rand()%(31-1);
@@ -213,17 +217,18 @@ int main(){
       		if (comprobarSexo==true
       			&&comprobarMenstrucion==true&&comprobarFertibi==true&&comprobarPisarSinCondon==true){
       			//paso al menu
+            (*Eligio1)*(*Eligio2);
       		}
 		}
 		if (opcionMendel==2){//con condon
 			bool Esfertil=false;
-      		int persona1,personas2;
-      		cout<<"Ingrese la posicion de la primera persona que va sumar: "
-      		cin>>persona1;
-      		cout<<"Ingrese la posicion de la segunda persona que va sumar: "
-      		cin>>persona2;
-      		Persona* Eligio1 = personas.at(persona1);
-      		Persona* Eligio2 = personas.at(persona2);
+      		int pers1,pers2;
+      		cout<<"Ingrese la posicion de la primera persona que va sumar: "<<endl;
+      		cin>>pers1;
+      		cout<<"Ingrese la posicion de la segunda persona que va sumar: "<<endl;
+      		cin>>pers2;
+      		Persona* Eligio1 = personas.at(pers1);
+      		Persona* Eligio2 = personas.at(pers2);
       		bool comprobarSexo=false;
       		bool comprobarFertibi=false,comprobarMenstrucion=false,comprobarPisarSinCondon=false;
 			int randomRegla=1+rand()%(31-1);
@@ -244,6 +249,7 @@ int main(){
       		if (comprobarSexo==true
       			&&comprobarMenstrucion==true&&comprobarFertibi==true&&comprobarPisarSinCondon==true){
       			//paso al menu
+            (*Eligio1)*(*Eligio2);
       		}
 		}
 
