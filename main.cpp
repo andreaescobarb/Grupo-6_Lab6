@@ -2,8 +2,8 @@
 #include <string>
 #include "Persona.h"
 #include <vector>
-#include "stdlib.h"
-
+#include <stdlib.h>
+#include <time.h>
 using namespace std;
 int menu();
 
@@ -184,23 +184,25 @@ int main(){
       }
       case 4:{
       	int opcionMendel;
+        int persona1, persona2;
       	cout<<"1) Desea tener relaciones sin condon"
 			<<"2) Desea tener relaciones con condon"
 			<<"Ingrese su opcion"<<endl;
 		cin>>opcionMendel;
 		if (opcionMendel==1){//sin condon
 		     bool Esfertil=false;
-      		int persona11,persona22;
+      		int persona1,personas2;
       		cout<<"Ingrese la posicion de la primera persona que va sumar: "<<endl;
-      		cin>>persona11;
+      		cin>>persona1;
       		cout<<"Ingrese la posicion de la segunda persona que va sumar: "<<endl;
-      		cin>>persona22;
-      		Persona* Eligio1 = personas.at(persona11);
-      		Persona* Eligio2 = personas.at(persona22);
+      		cin>>persona2;
+      		Persona* Eligio1 = personas.at(persona1);
+      		Persona* Eligio2 = personas.at(persona2);
+
       		bool comprobarSexo=false;
       		bool comprobarFertibi=false,comprobarMenstrucion=false,comprobarPisarSinCondon=false;
-			int randomRegla=1+rand()%(31-1);
-			int randomSinCondon=1+rand()%(101-1);
+			    int randomRegla=1+rand()%(31-1);
+			    int randomSinCondon=1+rand()%(101-1);
 			if (Eligio1->getFertil()=="fertil"&&Eligio2->getFertil()=="fertil"){
 				comprobarFertibi==true;
       		}
@@ -223,13 +225,13 @@ int main(){
 		}
 		if (opcionMendel==2){//con condon
 			bool Esfertil=false;
-      		int pers1,pers2;
+      		int persona1,personas2;
       		cout<<"Ingrese la posicion de la primera persona que va sumar: "<<endl;
-      		cin>>pers1;
+      		cin>>persona1;
       		cout<<"Ingrese la posicion de la segunda persona que va sumar: "<<endl;
-      		cin>>pers2;
-      		Persona* Eligio1 = personas.at(pers1);
-      		Persona* Eligio2 = personas.at(pers2);
+      		cin>>persona2;
+      		Persona* Eligio1 = personas.at(persona1);
+      		Persona* Eligio2 = personas.at(persona2);
       		bool comprobarSexo=false;
       		bool comprobarFertibi=false,comprobarMenstrucion=false,comprobarPisarSinCondon=false;
 			int randomRegla=1+rand()%(31-1);
