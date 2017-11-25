@@ -217,7 +217,8 @@ int main(){
       		if (comprobarSexo==true
       			&&comprobarMenstrucion==true&&comprobarFertibi==true&&comprobarPisarSinCondon==true){
       			//paso al menu
-            (*Eligio1)*(*Eligio2);
+      Persona* hijo = (*Eligio1)*(*Eligio2); 
+            personas.push_back(hijo);
       		}
 		}
 		if (opcionMendel==2){//con condon
@@ -249,7 +250,8 @@ int main(){
       		if (comprobarSexo==true
       			&&comprobarMenstrucion==true&&comprobarFertibi==true&&comprobarPisarSinCondon==true){
       			//paso al menu
-            (*Eligio1)*(*Eligio2);
+            Persona* hijo = (*Eligio1)*(*Eligio2); 
+            personas.push_back(hijo);
       		}
 		}
 
