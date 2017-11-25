@@ -254,7 +254,9 @@ int main(){
       			//paso al menu
             Persona* hijo = (*Eligio1)*(*Eligio2); 
             personas.push_back(hijo);
-      		}
+      		}else{
+            cout<<"No la saco embarazada primo! VUELVA A INTENTAR CAMPEON!!"<<endl;
+          }
 		}
 
         break;
